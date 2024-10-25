@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="cat_impute__AdvantageP1 <= 0.255\nsquared_error = 0.387\nsamples = 23323\nvalue = 0.041", fillcolor="#f1b991"] ;
+1 [label="cat_impute__BranchingFactorMedian <= 2.915\nsquared_error = 0.346\nsamples = 1606\nvalue = -0.694", fillcolor="#fcf1e9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="cat_impute__BoardSitesOccupiedChangeSign <= -0.005\nsquared_error = 0.626\nsamples = 211\nvalue = 0.221", fillcolor="#eeac7c"] ;
+1 -> 2 ;
+3 [label="squared_error = 0.189\nsamples = 71\nvalue = -0.645", fillcolor="#fbede3"] ;
+2 -> 3 ;
+4 [label="squared_error = 0.274\nsamples = 140\nvalue = 0.661", fillcolor="#e78a48"] ;
+2 -> 4 ;
+5 [label="num__NumLeftSites <= -0.865\nsquared_error = 0.157\nsamples = 1395\nvalue = -0.833", fillcolor="#fefcfa"] ;
+1 -> 5 ;
+6 [label="squared_error = 0.451\nsamples = 56\nvalue = 0.256", fillcolor="#eda978"] ;
+5 -> 6 ;
+7 [label="squared_error = 0.093\nsamples = 1339\nvalue = -0.878", fillcolor="#ffffff"] ;
+5 -> 7 ;
+8 [label="num__AdvantageP1 <= 0.765\nsquared_error = 0.347\nsamples = 21717\nvalue = 0.096", fillcolor="#f0b58b"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="num__AdvantageP1 <= -0.516\nsquared_error = 0.304\nsamples = 19304\nvalue = 0.03", fillcolor="#f1ba93"] ;
+8 -> 9 ;
+10 [label="squared_error = 0.468\nsamples = 1589\nvalue = -0.154", fillcolor="#f4c8a9"] ;
+9 -> 10 ;
+11 [label="squared_error = 0.286\nsamples = 17715\nvalue = 0.046", fillcolor="#f1b991"] ;
+9 -> 11 ;
+12 [label="cat_impute__OutcomeUniformity <= 0.79\nsquared_error = 0.386\nsamples = 2413\nvalue = 0.621", fillcolor="#e88d4c"] ;
+8 -> 12 ;
+13 [label="squared_error = 0.553\nsamples = 1034\nvalue = 0.404", fillcolor="#eb9e66"] ;
+12 -> 13 ;
+14 [label="squared_error = 0.198\nsamples = 1379\nvalue = 0.784", fillcolor="#e58139"] ;
+12 -> 14 ;
+}
